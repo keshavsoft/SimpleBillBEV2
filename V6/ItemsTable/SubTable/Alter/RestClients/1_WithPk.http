@@ -1,0 +1,11 @@
+POST http://localhost:9008/V6/ItemsTable/SubTable/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "ItemNameAlias": "",
+  "ItemCode": "",
+  "Rate": "",
+  "GstPercentage": "",
+  "hsn": ""
+}

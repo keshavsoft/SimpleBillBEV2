@@ -1,0 +1,9 @@
+POST http://localhost:9008/SV5/BillItemsTable/SubTableOnObj/Insert/WithUuIdAndDT/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": ""
+}

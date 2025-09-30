@@ -1,0 +1,1 @@
+DELETE http://localhost:9008/V6/BillItemsTable/SubTableOnArray/Delete/WithPk/{RowPk}/{KeyName}/{Key}

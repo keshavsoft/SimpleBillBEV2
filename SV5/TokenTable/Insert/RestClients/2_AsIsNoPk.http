@@ -1,0 +1,6 @@
+POST http://localhost:9008/SV5/TokenTable/Insert/AsIsNoPk
+Content-Type: application/json
+
+{
+  "Secret": ""
+}

@@ -1,0 +1,119 @@
+{
+    "tableName": "ItemsTable",
+    "columns": [
+        {
+            "field": "ItemName",
+            "title": "ItemName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "ItemNameAlias",
+            "title": "ItemNameAlias",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "ItemCode",
+            "title": "ItemCode",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true
+        },
+        {
+            "field": "GstPercentage",
+            "title": "Gst %",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "defaultvalue": 18
+        },
+        {
+            "field": "hsn",
+            "title": "hsn",
+            "unique": false,
+            "type": "number",
+            "isNumber": true
+        }
+    ],
+    "data": [],
+    "Vertical": [
+        {
+            "field": "ItemName",
+            "title": "ItemName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "ItemCode",
+            "title": "ItemCode",
+            "unique": false,
+            "type": "text",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "GstPercentage",
+            "title": "Gst %",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        }
+    ],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "ItemName"
+        }
+    },
+    "DefaultObjectToInsert": {
+        "Simple": {
+            "ItemName": "om namo venkateswara",
+            "ItemCode": "1",
+            "ItemNameAlias": "",
+            "Rate": 616,
+            "GstPercentage": 18,
+            "hsn": 8714,
+            "pk": 65
+        }
+    }
+}

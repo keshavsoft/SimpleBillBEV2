@@ -1,0 +1,4 @@
+POST http://localhost:9008/V5/ItemsTable/AddWithDefault/InsertFromBody
+Content-Type: application/json
+
+{ "Key": "","Value":"" }

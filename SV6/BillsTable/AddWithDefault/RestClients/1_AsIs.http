@@ -1,0 +1,2 @@
+POST http://localhost:9008/SV6/BillsTable/AddWithDefault/AsIs
+Content-Type: application/json

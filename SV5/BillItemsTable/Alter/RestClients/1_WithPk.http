@@ -1,0 +1,9 @@
+POST http://localhost:9008/SV5/BillItemsTable/Alter/WithPk/{pk}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": ""
+}

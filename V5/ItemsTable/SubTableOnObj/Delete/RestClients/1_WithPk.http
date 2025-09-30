@@ -1,0 +1,1 @@
+DELETE http://localhost:9008/V5/ItemsTable/SubTableOnObj/Delete/WithPk/{RowPk}/{KeyName}/{Key}

@@ -1,0 +1,4 @@
+POST http://localhost:9008/V5/BillsTable/AddWithDefault/InitRow/{Key}
+Content-Type: application/json
+
+{ "ColumnName": "Value" }

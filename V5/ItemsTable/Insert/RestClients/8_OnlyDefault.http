@@ -1,0 +1,2 @@
+POST http://localhost:9008/V5/ItemsTable/Insert/OnlyDefault
+Content-Type: application/json

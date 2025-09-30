@@ -1,0 +1,11 @@
+POST http://localhost:9008/V6/BillsTable/AddWithDefault/AddFromDefaultObj
+Content-Type: application/json
+
+{
+  "BuyerName": "k1",
+  "BuyerAddress": "",
+  "BuyerGST": "",
+  "InvoiceNo": "",
+  "InvoiceDate": "",
+  "InvoiceStateCode": ""
+}

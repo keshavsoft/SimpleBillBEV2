@@ -1,0 +1,4 @@
+POST http://localhost:9008/SV5/ItemsTable/Read/SelColsAsArray
+Content-Type: application/json
+
+[ "exampleKey"]

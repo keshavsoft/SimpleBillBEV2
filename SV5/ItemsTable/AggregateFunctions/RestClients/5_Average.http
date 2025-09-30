@@ -1,0 +1,1 @@
+GET http://localhost:9008/SV5/ItemsTable/AggregateFunctions/Average/{ColumnName}

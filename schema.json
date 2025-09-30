@@ -1,0 +1,9 @@
+{
+    "Tables": [
+        "ItemsTable",
+        "TokenTable",
+        "UsersTable",
+        "BillItemsTable",
+        "BillsTable"
+    ]
+}

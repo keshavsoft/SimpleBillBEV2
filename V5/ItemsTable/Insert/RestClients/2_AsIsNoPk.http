@@ -1,0 +1,11 @@
+POST http://localhost:9008/V5/ItemsTable/Insert/AsIsNoPk
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "ItemNameAlias": "",
+  "ItemCode": "",
+  "Rate": "",
+  "GstPercentage": "",
+  "hsn": ""
+}

@@ -1,0 +1,13 @@
+POST http://localhost:9008/SV6/ItemsTable/Insert/BulkAsIs
+Content-Type: application/json
+
+[
+  {
+    "ItemName": "",
+    "ItemNameAlias": "",
+    "ItemCode": "",
+    "Rate": "",
+    "GstPercentage": "",
+    "hsn": ""
+  }
+]

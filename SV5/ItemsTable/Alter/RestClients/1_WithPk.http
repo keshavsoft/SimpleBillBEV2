@@ -1,0 +1,11 @@
+POST http://localhost:9008/SV5/ItemsTable/Alter/WithPk/{pk}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "ItemNameAlias": "",
+  "ItemCode": "",
+  "Rate": "",
+  "GstPercentage": "",
+  "hsn": ""
+}

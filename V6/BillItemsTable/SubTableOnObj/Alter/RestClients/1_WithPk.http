@@ -1,0 +1,10 @@
+POST http://localhost:9008/V6/BillItemsTable/SubTableOnObj/Alter/WithPk/{RowPk}/{KeyName}/{pk}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": "",
+  "FK": ""
+}

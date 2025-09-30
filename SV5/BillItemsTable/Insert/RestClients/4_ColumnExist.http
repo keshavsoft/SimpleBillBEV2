@@ -1,0 +1,9 @@
+POST http://localhost:9008/SV5/BillItemsTable/Insert/ColumnExist
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": ""
+}

@@ -1,0 +1,4 @@
+POST http://localhost:9008/V6/BillsTable/Read/SelColumns
+Content-Type: application/json
+
+[ "exampleKey"]

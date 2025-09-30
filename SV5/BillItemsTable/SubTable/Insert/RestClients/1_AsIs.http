@@ -1,0 +1,9 @@
+POST http://localhost:9008/SV5/BillItemsTable/SubTable/Insert/AsIs/{RowIndex}/{KeyName}
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": ""
+}

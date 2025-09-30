@@ -1,0 +1,6 @@
+POST http://localhost:9008/V5/BillItemsTable/GroupBy/SingleColumnSum/{GroupByColumnName}
+Content-Type: application/json
+
+[
+	"SumColumnName"
+]

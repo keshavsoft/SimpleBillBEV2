@@ -1,0 +1,2 @@
+POST http://localhost:9008/SV5/ItemsTable/AddWithDefault/AsIs
+Content-Type: application/json

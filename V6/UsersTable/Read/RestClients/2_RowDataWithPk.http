@@ -1,0 +1,1 @@
+GET http://localhost:9008/V6/UsersTable/Read/RowDataWithPk/{pk}
