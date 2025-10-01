@@ -1,9 +1,11 @@
 const jVarCommonDataListId = "BuyerNameDLId";
 
 const StartFunc = (data) => {
-    console.log("data : ", data);
+    // console.log("data : ", data);
+    const uniqueArray = [...new Set(data)];
+    // console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
 
-    data.forEach(element => {
+    uniqueArray.forEach(element => {
         jFLocalAddToItems({ inAddOnService: element });
     });
 };
