@@ -1,7 +1,9 @@
 import UrlJson from './url.json' with { type: 'json' };
 
 const StartFunc = ({ inRowPk }) => {
-    window.location.href = `${UrlJson.RedirectToUrl}?inRowPk=${inRowPk}`;
+    console.log("inRowPk : ", inRowPk);
+
+    window.location.href = `${UrlJson.RedirectToUrl}?pk=${inRowPk}`;
 };
 
 const LocalFuncForSingleTable = ({ inRowPk }) => {

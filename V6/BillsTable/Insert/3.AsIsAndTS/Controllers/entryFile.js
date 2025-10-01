@@ -15,7 +15,7 @@ let postFilterDataFromBodyFunc = (req, res) => {
     };
 
     res.set('Content-Type', 'text/plain');
-    res.send(LocalFromRepo.SuccessText);
+    res.send(LocalFromRepo.InsertPk);
 };
 
 export {

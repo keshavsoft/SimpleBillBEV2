@@ -62,3 +62,7 @@
 ### 1.0.19
 
 -  Bill V6 started
+
+### 1.0.20
+
+-  Bill all perfect from index.html

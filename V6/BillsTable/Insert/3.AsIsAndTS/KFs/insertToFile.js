@@ -29,13 +29,14 @@ const StartFunc = ({ inRequestBody }) => {
         pk: MaxPk,
         ServerInsertedTimeStamp: new Date()
       };
-      
+
       data.push(LocalInsertData);
 
       fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 
       LocalReturnObject.KTF = true;
       LocalReturnObject.SuccessText = `Inserted pk ${MaxPk} In To ${LocalFileName}.json successfully`;
+      LocalReturnObject.InsertPk = MaxPk;
 
       return LocalReturnObject;
     } else {
