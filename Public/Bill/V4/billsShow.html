@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.24.1/dist/bootstrap-table.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -180,11 +182,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link text-white">
+                                <a href="billsAdd.html" class="nav-link text-white">
                                     <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
                                         <use xlink:href="#speedometer2"></use>
                                     </svg>
-                                    Dashboard
+                                    AddItems
                                 </a>
                             </li>
                             <li>
@@ -245,7 +247,6 @@
                     <th data-field="InvoiceNo">InvoiceNo</th>
                     <th data-field="InvoiceDate">InvoiceDate</th>
                     <th data-field="InvoiceStateCode">InvoiceStateCode</th>
-                    <th data-field="KS-Delete" data-formatter="window.GlobalDeleteFormatter">Options</th>
                 </tr>
             </thead>
         </table>
@@ -265,7 +266,6 @@
         window.GlobalSerialFormatter = (value, row, index) => {
             return index + 1;
         };
-
 
         window.GlobalDeleteFormatter = (value, row, index) => {
             return [

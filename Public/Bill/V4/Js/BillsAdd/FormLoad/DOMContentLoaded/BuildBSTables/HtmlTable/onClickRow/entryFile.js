@@ -3,11 +3,11 @@ const StartFunc = async (row, $element, field) => {
         let jVarLocalFromSwal = await Swal.fire({
             title: "Are you sure?",
             text: "You want to add items to this bill...",
-            icon: "error",
+            icon: "success",
             showCancelButton: true,
-            confirmButtonColor: "#d33",
+            confirmButtonColor: "green",
             cancelButtonColor: "grey",
-            confirmButtonText: "Yes, delete it!",
+            confirmButtonText: "Yes",
             reverseButtons: true,
             focusCancel: true,
             cancelButtonText: "Cancel"
