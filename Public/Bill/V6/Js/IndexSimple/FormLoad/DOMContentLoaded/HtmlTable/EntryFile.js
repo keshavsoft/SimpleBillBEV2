@@ -10,7 +10,7 @@ const StartFunc = () => {
     LocalConfig.onPostBody = StartFuncFromOnPostBody;
     LocalConfig.onPostFooter = StartFuncFromOnPostFooter;
     LocalConfig.onClickRow = StartFuncFromOnClickRow;
-  
+
     $table.bootstrapTable(LocalConfig);
 };
 

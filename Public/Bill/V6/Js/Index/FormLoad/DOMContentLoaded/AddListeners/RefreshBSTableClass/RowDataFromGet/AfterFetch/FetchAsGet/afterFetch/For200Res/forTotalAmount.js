@@ -1,18 +1,7 @@
-import { StartFunc as StartFuncFromForTotalAmount } from "./forTotalAmount.js";
-
-let StartFunc = ({ inResponseAsJson }) => {
-    var $table = $('#table');
-
-    $table.bootstrapTable("load", inResponseAsJson);
-    // console.log("aaaaaaaa : ", inResponseAsJson);
-
-    StartFuncFromForTotalAmount({ inResponseAsJson });
-};
-
-const jFLocalTotalAmount = ({ inResponseAsJson }) => {
+const StartFunc = ({ inResponseAsJson }) => {
     const jVarLocalAmountArray = inResponseAsJson.map(element => {
-        const jVarLocalAmount = parseInt(((element.Rate * element.Qty) * ((100 - element.DiscPer) / 100)).toFixed(0));
-        // return element.Rate * element.Qty;
+        const jVarLocalAmount = parseInt(((element.Rate * element.Qty) * ((100 - (element.DiscPer === undefined ? 0 : element.DiscPer)) / 100)).toFixed(0));
+
         return jVarLocalAmount;
     });
 

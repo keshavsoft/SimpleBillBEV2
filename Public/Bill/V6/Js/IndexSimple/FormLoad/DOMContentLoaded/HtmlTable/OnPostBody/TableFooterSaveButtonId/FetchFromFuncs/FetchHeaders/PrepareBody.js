@@ -1,7 +1,5 @@
-import { StartFunc as StartFuncFromCalculateAmount } from "./calculateAmount.js";
-
 const StartFunc = ({ inCurrentTarget }) => {
-    StartFuncFromCalculateAmount();
+    LocalFuncCalculateAmount();
 
     const jVarLocalCurrentTarget = inCurrentTarget;
     const jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");

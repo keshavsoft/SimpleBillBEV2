@@ -1,30 +1,20 @@
-import { StartFunc as StartFuncFromCalculateAmount } from "./calculateAmount.js";
-
-const StartFunc = ({ inCurrentTarget }) => {
-    StartFuncFromCalculateAmount();
-
-    const jVarLocalCurrentTarget = inCurrentTarget;
-    const jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");
-    const jVarLocalInputs = jVarLocalClosestTr.querySelectorAll("input");
-    // debugger
-    let jVarLocalPostObject = jFLocalPreparePostBody({ inQuerySelectorAll: jVarLocalInputs });
-    jVarLocalPostObject.FK = getUrlQueryParams({ inGetKey: "pk" });
-
-    return JSON.stringify(jVarLocalPostObject);
-};
-
-const getUrlQueryParams = ({ inGetKey }) => {
-    const queryString = window.location.search;
-    const parameters = new URLSearchParams(queryString);
-    const value = parameters.get(inGetKey);
-    return value;
-};
-
-const LocalFuncCalculateAmount = () => {
+const StartFunc = () => {
     const jVarLocalRate = jFLocalHtmlIdRate();
     const jVarLocalQty = jFLocalHtmlIdQty();
-    const jVarLocalAmount = jVarLocalRate * jVarLocalQty;
+    const jVarLocalDiscPer = jFLocalHtmlIdDisc();
+
+    const jVarLocalAmount = ((jVarLocalRate * jVarLocalQty) * ((100 - jVarLocalDiscPer) / 100)).toFixed(0);
+
     jFLocalToInputHtmlIdAmount(jVarLocalAmount);
+};
+
+let jFLocalHtmlIdDisc = () => {
+    let jVarLocalHtmlIdDisc = 'HtmlId-Disc%'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalHtmlIdDisc);
+
+    if (jVarLocalHtmlId === null === false) {
+        return jVarLocalHtmlId.value.trim();
+    };
 };
 
 let jFLocalToInputHtmlIdAmount = (inValue) => {
