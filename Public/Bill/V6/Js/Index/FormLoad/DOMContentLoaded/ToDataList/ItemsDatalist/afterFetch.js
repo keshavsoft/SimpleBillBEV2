@@ -1,8 +1,12 @@
-const jVarCommonDataListId="AddOnsDataListId";
+const jVarCommonDataListId = "ItemNameDLId";
 
 const StartFunc = (data) => {
-    data.forEach(element => {
-        jFLocalAddToItems({ inAddOnService: element.AddOnService });
+    // console.log("data : ", data);
+    const uniqueArray = [...new Set(data)];
+    // console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+    uniqueArray.forEach(element => {
+        jFLocalAddToItems({ inAddOnService: element });
     });
 };
 
