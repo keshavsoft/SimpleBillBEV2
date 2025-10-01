@@ -5,6 +5,7 @@ let StartFunc = ({ inResponse }) => {
    console.log("aaaaaaaaaa : ", inResponse);
    jFLocalToInputBillNumberId(inResponse.pk);
    jFLocalToInputInvoiceDateId(inResponse.InvoiceDate);
+   jFLocalToInputBuyerNameId(inResponse.BuyerName);
 
    Object.entries(inResponse).forEach(([key, value]) => {
       let inputElement = document.getElementById(`HtmlId-${key}`);
@@ -12,6 +13,15 @@ let StartFunc = ({ inResponse }) => {
          inputElement.value = value;
       }
    });
+};
+
+let jFLocalToInputBuyerNameId = (inValue) => {
+   let jVarLocalHtmlId = 'BuyerNameId';
+   let jVarLocalBuyerNameId = document.getElementById(jVarLocalHtmlId);
+
+   if (jVarLocalBuyerNameId === null === false) {
+      jVarLocalBuyerNameId.innerHTML = inValue;
+   };
 };
 
 let jFLocalToInputInvoiceDateId = (inValue) => {

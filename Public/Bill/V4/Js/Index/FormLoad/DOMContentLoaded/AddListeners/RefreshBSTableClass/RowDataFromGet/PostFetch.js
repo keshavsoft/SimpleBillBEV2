@@ -11,8 +11,19 @@ let StartFunc = async () => {
     let jVarLocalFetchUrl = `${jVarTableName}/${jVarLoclRowDataUrl}/${jVarLocalFilterString}`;
 
     let response = await fetch(jVarLocalFetchUrl);
+    // console.log("aaaaaa L: ", jVarLocalFilterString);
+    jFLocalToInputBillNumberId(jVarLocalFilterString);
 
     return response;
+};
+
+let jFLocalToInputBillNumberId = (inValue) => {
+    let jVarLocalHtmlId = 'BillNumberId';
+    let jVarLocalBillNumberId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalBillNumberId === null === false) {
+        jVarLocalBillNumberId.innerHTML = inValue;
+    };
 };
 
 let getUrlQueryParams = ({ inGetKey }) => {
