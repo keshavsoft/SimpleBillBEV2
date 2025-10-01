@@ -232,45 +232,57 @@
 
         <div class="container">
 
-            <form onsubmit="return false" id="FormId">
-                <div class="row">
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerName"
-                            class="form-label">BuyerName</label>
-                        <input type="text" class="form-control" id="HtmlId-BuyerName" name="BuyerName"
-                            autocomplete="off" autofocus>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerAddress"
-                            class="form-label">BuyerAddress</label> <input type="text" class="form-control"
-                            id="HtmlId-BuyerAddress" name="BuyerAddress" autocomplete="off">
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerGST"
-                            class="form-label">BuyerGST</label>
-                        <input type="text" class="form-control" id="HtmlId-BuyerGST" name="BuyerGST" autocomplete="off"
-                            autofocus>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceNo"
-                            class="form-label">InvoiceNo</label>
-                        <input type="text" class="form-control" id="HtmlId-InvoiceNo" name="InvoiceNo"
-                            autocomplete="off">
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceDate"
-                            class="form-label">InvoiceDate</label> <input type="date" class="form-control"
-                            id="HtmlId-InvoiceDate" name="InvoiceDate">
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceStateCode"
-                            class="form-label">InvoiceStateCode</label> <input type="text" class="form-control"
-                            id="HtmlId-InvoiceStateCode" name="InvoiceStateCode" autocomplete="off" value="37">
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="text-center mt-4"><button id="SaveButtonId"
-                            class="btn btn-primary px-4 RefreshBSTableClass">Create</button></div>
+            <div class="row">
+                <div class="col">
+                    <form onsubmit="return false" id="FormId">
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerName"
+                                    class="form-label">BuyerName</label>
+                                <input type="text" class="form-control" id="HtmlId-BuyerName" name="BuyerName"
+                                    autocomplete="off" autofocus list="BuyerNameDLId">
+
+                                <datalist id="BuyerNameDLId">
+                                </datalist>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerAddress"
+                                    class="form-label">BuyerAddress</label> <input type="text" class="form-control"
+                                    id="HtmlId-BuyerAddress" name="BuyerAddress" autocomplete="off">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-BuyerGST"
+                                    class="form-label">BuyerGST</label>
+                                <input type="text" class="form-control" id="HtmlId-BuyerGST" name="BuyerGST"
+                                    autocomplete="off">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceNo"
+                                    class="form-label">InvoiceNo</label>
+                                <input type="text" class="form-control" id="HtmlId-InvoiceNo" name="InvoiceNo"
+                                    autocomplete="off">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceDate"
+                                    class="form-label">InvoiceDate</label> <input type="date" class="form-control"
+                                    id="HtmlId-InvoiceDate" name="InvoiceDate">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="col-lg-12 col-md-6 mb-3"><label for="HtmlId-InvoiceStateCode"
+                                    class="form-label">InvoiceStateCode</label> <input type="text" class="form-control"
+                                    id="HtmlId-InvoiceStateCode" name="InvoiceStateCode" autocomplete="off" value="37">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="text-center mt-4"></div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+                <div class="col">
+                    <button id="SaveButtonId" class="btn btn-success px-4 RefreshBSTableClass">Save Bill</button>
+                </div>
+            </div>
+
+
     </main>
 
     </div>
