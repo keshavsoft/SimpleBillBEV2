@@ -8,11 +8,12 @@ let StartFunc = ({ inResponseAsJson }) => {
 
     const sum = jVarLocalAmountArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     const jVarLocalTaxableValue = sum * 100 / 118;
-    const jVarLocalTaxString = `(CGST ₹${(sum - jVarLocalTaxableValue) / 2} + SGST ₹${(sum - jVarLocalTaxableValue) / 2})`;
+    const jVarLocalTaxString = `(CGST ₹${((sum - jVarLocalTaxableValue) / 2).toFixed(2)} + SGST ₹${((sum - jVarLocalTaxableValue) / 2).toFixed(2)})`;
 
     LocalFuncForTotal(sum);
 
     jFLocalToInputTaxableValueId(`₹ ${jVarLocalTaxableValue.toFixed(2)}`);
+    jFLocalToInputTaxSplitId(jVarLocalTaxString);
 };
 
 const LocalFuncForTemplate = (element, LoopIndex) => {
@@ -67,6 +68,16 @@ let jFLocalToInputTaxableValueId = (inValue) => {
 
     if (jVarLocalTaxableValueId === null === false) {
         jVarLocalTaxableValueId.innerHTML = inValue;
+    };
+};
+
+let jFLocalToInputTaxSplitId = (inValue) => {
+    let jVarLocalHtmlId = 'TaxSplitId';
+    let jVarLocalTaxSplitId = document.getElementById(jVarLocalHtmlId);
+
+    if (jVarLocalTaxSplitId === null === false) {
+        jVarLocalTaxSplitId.innerHTML = inValue;
+
     };
 };
 
