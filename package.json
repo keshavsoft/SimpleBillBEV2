@@ -1,6 +1,6 @@
 {
   "name": "SimpleBillBEV2",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "",
   "main": "app.js",
   "type": "module",
