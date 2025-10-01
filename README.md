@@ -42,3 +42,7 @@
 ### 1.0.14
 
 - public Bill V2 print still working on
+
+### 1.0.15
+
+- public Bill V3 still working on
