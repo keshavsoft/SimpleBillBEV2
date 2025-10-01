@@ -26,3 +26,7 @@
 ### 1.0.10
 
 - public Bill started doing
+
+### 1.0.11
+
+- public Bill perfect entry
