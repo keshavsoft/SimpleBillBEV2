@@ -256,37 +256,14 @@
                 </tr>
             </thead>
             <tbody id="TableBodyId">
-           
+
             </tbody>
         </table>
-
-        <div class="tax-summary">
-            <div class="tax-card" role="note" aria-label="Tax summary">
-                <div style="font-weight:700;margin-bottom:6px;">Tax Summary</div>
-                <div class="row">
-                    <div>Taxable Value:</div>
-                    <div>₹ 1,964.41</div>
-                </div>
-                <div class="row">
-                    <div>GST Rate:</div>
-                    <div>18%</div>
-                </div>
-                <div class="row">
-                    <div>CGST (9%):</div>
-                    <div>₹ 176.80</div>
-                </div>
-                <div class="row">
-                    <div>SGST (9%):</div>
-                    <div>₹ 176.80</div>
-                </div>
-                <div style="height:1px;background:#eee;margin:8px 0;"></div>
-                <div class="row" style="font-weight:800;">
-                    <div>Grand Total:</div>
-                    <div>₹ 2,318.00</div>
-                </div>
-                <div style="font-size:12px;color:var(--muted);margin-top:8px;">(Rounded / reproduced from the original
-                    bill)</div>
-            </div>
+        <!-- Tax Summary: single line -->
+        <div class="d-flex flex-wrap justify-content-end align-items-center gap-2 small border rounded p-2 bg-light">
+            <!-- <strong class="me-1">Tax Summary:</strong> -->
+            <span>Taxable Value <strong id="TaxableValueId">₹1,964.41</strong> </span>
+            <span>• GST 18% <strong id="TaxSplitId">(CGST ₹176.80 + SGST ₹176.80)</strong> </span>
         </div>
 
         <div class="bank">
@@ -311,11 +288,18 @@
 
     <template id="TemplateForRowId">
         <tr>
-            <td class="center">7</td>
-            <td>NGK plug cap / PL plug (handwritten)</td>
-            <td class="center">1</td>
-            <td class="right">192.00</td>
-            <td class="right">192.00</td>
+            <td class="center"></td>
+            <td></td>
+            <td class="center"></td>
+            <td class="right"></td>
+            <td class="right"></td>
+        </tr>
+    </template>
+
+    <template id="TemplateForTotalRowId">
+        <tr>
+            <td colspan="4" class="right" style="font-weight:700;padding-top:12px;  font-size: 20px;">Totals</td>
+            <td class="right" style="font-weight:700;padding-top:12px; font-size: 25px;">₹ 2,292.00</td>
         </tr>
     </template>
 

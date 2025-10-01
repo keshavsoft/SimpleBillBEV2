@@ -38,3 +38,7 @@
 ### 1.0.13
 
 - public Bill V2 print started
+
+### 1.0.14
+
+- public Bill V2 print still working on
