@@ -22,3 +22,7 @@
 ### 1.0.9
 
 - public V6 added
+
+### 1.0.10
+
+- public Bill started doing

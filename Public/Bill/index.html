@@ -10,30 +10,38 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+
 
     <div class="container">
+        <h1>Last Bill</h1>
+        <!-- "BuyerName": "k5",
+        "BuyerAddress": "",
+        "BuyerGST": "",
+        "InvoiceNo": "",
+        "InvoiceDate": "",
+        "InvoiceStateCode": "", -->
+
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <label for="BuyerNameId" class="form-label">Buyer name</label>
+                <input type="text" class="form-control" id="BuyerNameId" value="Mark" required name="BuyerName">
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <label for="BuyerAddressId" class="form-label">Buyer Address</label>
+                <input type="text" class="form-control" id="BuyerAddressId" value="Otto" name="BuyerAddress">
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
+                <label for="BuyerGSTId" class="form-label">BuyerGST</label>
                 <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <span class="input-group-text" id="BuyerGSTId">@</span>
                     <input type="text" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
+                        aria-describedby="inputGroupPrepend" required name="BuyerGST">
                     <div class="invalid-feedback">
                         Please choose a username.
                     </div>
