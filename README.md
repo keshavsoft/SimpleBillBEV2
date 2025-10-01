@@ -34,3 +34,7 @@
 ### 1.0.12
 
 - public Bill V1 folder started
+
+### 1.0.13
+
+- public Bill V2 print started
