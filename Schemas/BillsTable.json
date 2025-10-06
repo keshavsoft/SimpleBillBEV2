@@ -77,5 +77,9 @@
             "InvoiceDate": "",
             "InvoiceStateCode": "37"
         }
-    }
+    },
+    "SubRoutes": [
+        "Read",
+        "Insert"
+    ]
 }

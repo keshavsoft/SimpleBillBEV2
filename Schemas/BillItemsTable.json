@@ -54,5 +54,10 @@
             "Amount": 0,
             "FK": 0
         }
-    }
+    },
+    "SubRoutes": [
+        "Read",
+        "Insert",
+        "Filter"
+    ]
 }

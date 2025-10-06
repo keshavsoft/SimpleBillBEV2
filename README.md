@@ -66,3 +66,7 @@
 ### 1.0.20
 
 -  Bill all perfect from index.html
+
+### 1.0.21
+
+-  V7 NonSecured perfect with Bill Lates Version
