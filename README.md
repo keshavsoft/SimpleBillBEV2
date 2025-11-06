@@ -74,3 +74,7 @@
 ### 1.0.22
 
 -  Latest UI and SV
+
+### 1.0.23
+
+-  Latest UI, FP started

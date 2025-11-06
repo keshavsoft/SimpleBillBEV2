@@ -37,6 +37,15 @@
             "title": "FK",
             "type": "number",
             "isInput": true
+        },
+        {
+            "field": "BatchExp",
+            "title": "BatchExp",
+            "type": "text",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
         }
     ],
     "data": [],

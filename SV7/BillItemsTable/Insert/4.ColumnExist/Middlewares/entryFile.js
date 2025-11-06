@@ -1,4 +1,4 @@
-const CommonColumnsArray = ["ItemName","Rate","Qty","Amount","FK"];
+const CommonColumnsArray = ["ItemName","Rate","Qty","Amount","FK","BatchExp"];
 import { StartFunc as StartFuncFromForMissingFields } from "./forMissingFields.js";
 import { StartFunc as StartFuncFromForExtraFields } from "./forExtraFields.js";
 
