@@ -78,3 +78,7 @@
 ### 1.0.23
 
 -  Latest UI, FP started
+
+### 1.0.24
+
+-  UI FP perfect

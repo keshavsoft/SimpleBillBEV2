@@ -80,6 +80,7 @@
     },
     "SubRoutes": [
         "Read",
-        "Insert"
+        "Insert",
+        "Filter"
     ]
 }

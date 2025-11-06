@@ -10,6 +10,7 @@ let LocalFuncForDefaultValue = ({ inColumns, inFooterCells }) => {
     const jVarLocalDefaultValues = jVarLocalColumns.map(element => {
         return element.defaultvalue;
     });
+    console.log("jVarLocalDefaultValues : ", jVarLocalDefaultValues);
 
     jVarLocalFooterCells.forEach((element, LoopIndex) => {
         if (jVarLocalDefaultValues[LoopIndex] !== undefined) {
@@ -21,9 +22,7 @@ let LocalFuncForDefaultValue = ({ inColumns, inFooterCells }) => {
 };
 
 const LocalFuncForTypeDate = ({ inColumns, inFooterCells }) => {
-    // const k1 = inOptions.$tableFooter[0].querySelectorAll("th")[1].querySelector("input");
     const jVarLocalColumns = inColumns;
-    // console.log("jVarLocalColumns", jVarLocalColumns);
     const jVarLocalFooterCells = inFooterCells;
 
     const jVarLocalDefaultValues = jVarLocalColumns.map(element => {

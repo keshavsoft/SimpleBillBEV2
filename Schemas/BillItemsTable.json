@@ -67,6 +67,7 @@
     "SubRoutes": [
         "Read",
         "Insert",
-        "Filter"
+        "Filter",
+        "Delete"
     ]
 }
