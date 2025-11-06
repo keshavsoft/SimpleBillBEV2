@@ -82,3 +82,7 @@
 ### 1.0.24
 
 -  UI FP perfect
+
+### 1.0.25
+
+-  .env port added
