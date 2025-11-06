@@ -1,0 +1,4 @@
+POST http://localhost:9009/SV7/ItemsTable/Read/SelColumns
+Content-Type: application/json
+
+[ "exampleKey"]

@@ -70,3 +70,7 @@
 ### 1.0.21
 
 -  V7 NonSecured perfect with Bill Lates Version
+
+### 1.0.22
+
+-  Latest UI and SV

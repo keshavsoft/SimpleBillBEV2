@@ -1,0 +1,2 @@
+POST http://localhost:9009/SV7/BillItemsTable/Insert/OnlyDefault
+Content-Type: application/json
