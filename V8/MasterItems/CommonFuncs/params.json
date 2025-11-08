@@ -1,0 +1,1 @@
+{"TableName":"MasterItems","DataPath":"Data","Columns":["ItemName","Rate"],"ColumnsWithSchema":[{"field":"ItemName","title":"ItemName","unique":true,"type":"text","isInput":true,"isAutoFocus":true,"WidthOptions":{"inPx":200}},{"field":"Rate","title":"Rate","unique":false,"type":"number","isNumber":true}]}

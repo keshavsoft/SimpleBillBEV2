@@ -1,0 +1,4 @@
+POST http://localhost:9014/SV8/MasterItems/Filter/BodyInArray
+Content-Type: application/json
+
+{"inKey":"element.","inValue":""}
