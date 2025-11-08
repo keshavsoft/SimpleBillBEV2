@@ -1,0 +1,1 @@
+DELETE http://localhost:9014/SV8/MasterItems/Delete/WithPk/{pk}

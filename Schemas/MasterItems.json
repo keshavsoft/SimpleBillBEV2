@@ -1,0 +1,69 @@
+{
+    "tableName": "MasterItems",
+    "columns": [
+        {
+            "field": "ItemName",
+            "title": "ItemName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true
+        }
+    ],
+    "data": [],
+    "Vertical": [
+        {
+            "field": "ItemName",
+            "title": "ItemName",
+            "unique": true,
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "unique": false,
+            "type": "number",
+            "isNumber": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        }
+    ],
+    "DataTableOptions": {
+        "Header": {
+            "autoFocus": "ItemName"
+        }
+    },
+    "DefaultObjectToInsert": {
+        "Simple": {
+            "ItemName": "om namo venkateswara",
+            "ItemCode": "1",
+            "ItemNameAlias": "",
+            "Rate": 616,
+            "GstPercentage": 18,
+            "hsn": 8714,
+            "pk": 65
+        }
+    },
+    "SubRoutes": [
+        "Read",
+        "Insert",
+        "Filter",
+        "Delete"
+    ]
+}

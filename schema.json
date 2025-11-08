@@ -4,6 +4,7 @@
         "TokenTable",
         "UsersTable",
         "BillItemsTable",
-        "BillsTable"
+        "BillsTable",
+        "MasterItems"
     ]
 }

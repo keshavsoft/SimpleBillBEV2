@@ -1,0 +1,11 @@
+POST http://localhost:9014/SV8/BillItemsTable/Insert/AsIs
+Content-Type: application/json
+
+{
+  "ItemName": "",
+  "Rate": "",
+  "Qty": "",
+  "Amount": "",
+  "FK": "",
+  "BatchExp": ""
+}
